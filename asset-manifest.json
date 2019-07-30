@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gallery-app/static/css/main.2cce8147.chunk.css",
+    "main.js": "/gallery-app/static/js/main.499b9855.chunk.js",
+    "main.js.map": "/gallery-app/static/js/main.499b9855.chunk.js.map",
+    "runtime~main.js": "/gallery-app/static/js/runtime~main.4991d15d.js",
+    "runtime~main.js.map": "/gallery-app/static/js/runtime~main.4991d15d.js.map",
+    "static/js/2.b41502e9.chunk.js": "/gallery-app/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/gallery-app/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/gallery-app/index.html",
+    "precache-manifest.cdffa40cfe6e974035d1ff42275ddcc0.js": "/gallery-app/precache-manifest.cdffa40cfe6e974035d1ff42275ddcc0.js",
+    "service-worker.js": "/gallery-app/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/gallery-app/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/gallery-app/static/media/logo.5d5d9eef.svg"
+  }
+}
