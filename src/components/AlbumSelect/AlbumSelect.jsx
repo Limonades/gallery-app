@@ -1,9 +1,9 @@
 import * as React from 'react';
+import './index.scss';
 
 class AlbumSelect extends React.Component {
   handleChange = e => {
     const { fetchDataPhotos } = this.props;
-    console.log(e.target.value);
 
     fetchDataPhotos(e.target.value);
   };
@@ -12,7 +12,7 @@ class AlbumSelect extends React.Component {
     const { albums, loader } = this.props;
 
     return (
-      <div>
+      <div className="album-select">
         <h1>Albums</h1>
         <select onChange={this.handleChange}>
           <option>Albums</option>

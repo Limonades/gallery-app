@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { AlbumSelect } from '../index';
+import { AlbumSelect, PhotosSearch } from '../index';
 import { fetchAlbums } from '../../redux-modules/albumSelect/actions';
 import { fetchPhotos } from '../../redux-modules/photosData/actions';
+import './index.scss';
 
 class RequestPanel extends React.Component {
   componentWillMount() {
@@ -11,18 +12,13 @@ class RequestPanel extends React.Component {
     fetchDataAlbums();
   }
 
-  componentDidMount() {
-    console.log('componentDidMount');
-  }
-
   render() {
-    console.log('render');
-
     const { albums, isLoading, fetchDataPhotos } = this.props;
 
     return (
-      <div className="request-panel">
+      <div className="request-panel container">
         <AlbumSelect albums={albums} loader={isLoading} fetchDataPhotos={fetchDataPhotos} />
+        <PhotosSearch />
       </div>
     );
   }
@@ -40,8 +36,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(fetchAlbums());
   },
 
-  fetchDataPhotos: () => {
-    dispatch(fetchPhotos());
+  fetchDataPhotos: id => {
+    dispatch(fetchPhotos(id));
   },
 });
 

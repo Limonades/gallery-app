@@ -2,6 +2,12 @@ body {
     color: white;
 }
 
+* {
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 1000px;

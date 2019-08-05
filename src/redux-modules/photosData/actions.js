@@ -9,16 +9,13 @@ export const photosSuccess = result => ({
   payload: result,
 });
 
-export const fetchPhotos = (id = 1) => async dispatch => {
-  console.log(id);
+export const fetchPhotos = id => async dispatch => {
   dispatch(dataIsLoading(true));
 
   try {
     const result = await fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${id}`).then(
       response => response.json()
     );
-
-    console.log(result);
 
     dispatch(photosSuccess(result));
   } catch (err) {

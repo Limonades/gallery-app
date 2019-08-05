@@ -5,13 +5,12 @@ import './index.scss';
 class ResultPanel extends React.Component {
   render() {
     const { photos, isLoading } = this.props;
-    console.log(photos);
     return (
       <div className="container result-panel__container">
         {isLoading ? <div className="loader" /> : null}
-        {photos
+        {photos.length
           ? photos.map(el => (
-              <div className="result-panel__card">
+              <div className="result-panel__card" key={el.id}>
                 <picture>
                   <img src={el.thumbnailUrl} alt={el.title} />
                 </picture>
