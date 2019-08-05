@@ -1,4 +1,4 @@
-// TODO TURCH CONST
+// TODO TURCH CONST and global
 export const dataIsLoading = bool => ({
   type: 'DATA_IS_LOADING',
   payload: bool,

@@ -1,0 +1,21 @@
+.result-panel {
+    &__container {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, .1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    &__card {
+        width: 25%;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        text-align: center;
+    }
+}
